@@ -1114,7 +1114,7 @@ class PeakQualityReport():
     for mol in self.peak_location_kde.keys():
       if counter == 0:
         fig, ax = plt.subplots(row_number, col_number, layout="constrained")
-      rt_list = chrom_db.chrom[chrom_db.chrom['PeptideModifiedSequence'] == mol].iloc[:, 8].str.split(',')
+      rt_list = chrom_db.chrom[chrom_db.chrom['PeptideModifiedSequence'] == mol].loc[:, 'Times'].str.split(',')
       rt_min = rt_list.apply(lambda x: float(min(x))).min()
       rt_max = rt_list.apply(lambda x: float(max(x))).max()
       x_range = np.linspace(rt_min, rt_max, 1000)
