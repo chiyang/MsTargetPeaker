@@ -2,7 +2,7 @@
 # https://packaging.python.org/en/latest/tutorials/packaging-projects/
 # Build: `python -m build`
 # Upload: `python -m twine upload --repository testpypi dist/*`
-# Install: `python -m pip install --index-url https://test.pypi.org/simple/ MsTargetPeaker==0.3.3`
+# Install: `python -m pip install --index-url https://test.pypi.org/simple/ MsTargetPeaker==0.3.7`
 
 
 [build-system]

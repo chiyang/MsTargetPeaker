@@ -111,10 +111,10 @@ The full arguments are shown below:
 |--output_mixed_mol|-mix|If set, chromatogram plots for each target molecule will be mixed in one PDF page.|(no value)|unset|
 |--reorder_by_group|-r|If set, target molecule will be reordered based on the replicate group. Only works if the --group_csv is provided.|(no value)|unset|
 |--chromatogram_dpi|-dpi|The dpi of chromatogram plots. Only works when --output_chromatogram_pdf is set.|integer|200|
-|--chromatogram_nrow|-nrow| | |
-|--chromatogram_ncol|-ncol| | |
-|--chromatogram_fig_w|-figw| | |
-|--chromatogram_fig_h|-figh| | |
+|--chromatogram_nrow|-nrow| #Rows per PDF page.| integer| 6|
+|--chromatogram_ncol|-ncol| #Columns per PDF page.| integer|6|
+|--chromatogram_fig_w|-figw| The width of a PDF page (in inches)  | float | ncol*7 |
+|--chromatogram_fig_h|-figh| The height of a PDF page (in inches) | float | nrow*5 |
 
 ## Utility Functions
 

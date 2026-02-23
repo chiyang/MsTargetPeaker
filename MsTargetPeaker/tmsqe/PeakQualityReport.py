@@ -869,9 +869,9 @@ class PeakQualityReport():
     print("Outputing chromatogram plots to " + output_file)
     plt.rcParams['figure.dpi'] = dpi
     if figW is None:
-      figW = ncol * 7
+      figW = ncol * 7.0
     if figH is None:
-      figH = nrow * 5
+      figH = nrow * 5.0
     plt.rcParams['figure.figsize'] = (figW, figH)
     plt.rcParams.update({'font.size': 10})
     chrom_list = []
@@ -944,7 +944,7 @@ class PeakQualityReport():
       if options['mol_separation'] :
         fig.suptitle(f"{page_items[0][0]} (Page {options['page_num']} of {options['total_page']})", fontsize=14, fontweight='bold', ha='left', x=0.01)
       else:
-        fig.subtitle(f"Page {options['page_num']} of {options['total_page']})", fontsize=10, ha='right', x=0.98)
+        fig.suptitle(f"Page {options['page_num']} of {options['total_page']})", fontsize=10, ha='right', x=0.98)
     for row_idx in range(nrow):
       for col_idx in range(ncol):
         if item_idx >= len(page_items) or page_items[item_idx] is None:
