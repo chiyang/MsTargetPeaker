@@ -15,6 +15,8 @@ MsTargetPeaker also provides a peak reporter to generate interpretable peak qual
 Currently, MsTargetPeaker supports peptide MRM/PRM data.
 
 
+
+
 ## Installation
 MsTargetPeaker was built as a Python package. You can use the following command to install the package.
 
@@ -153,3 +155,16 @@ MsTargetPeakMerger [-h] input_folder output_csv_file
 This `MsTargetPeakMerger` accepts a folder containing multiple peak csv files and output the merged version of those csv files.
 You can use `MsTargetChromSplitter` to split the input chromatogram TSV file, run MsTargetPeaker in parallel on each split file to search for peak regions, and merge the resulting peak CSV files in a folder using `MsTargetPeakMerger`.
 
+## Citation
+
+If you use MsTargetPeaker in your research, please cite:
+
+```bibtex
+@article{yang2026mstargetpeaker,
+  author = {Yang, C. and Hsiao, Y. C. and Lee, C. C. and Chu, L. J. and Yeh, T. S. and Cheng, P. C. and Tang, P. and Yu, J. S.},
+  title = {MsTargetPeaker: A Quality-Aware Deep Reinforcement Learning Approach for Peak Identification in Targeted Proteomics},
+  journal = {Molecular \& Cellular Proteomics},
+  volume = {25},
+  pages = {101523},
+  year = {2026}
+}
