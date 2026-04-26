@@ -15,6 +15,8 @@ MsTargetPeaker also provides a peak reporter to generate interpretable peak qual
 Currently, MsTargetPeaker supports peptide MRM/PRM data.
 
 
+## Graphical Introduction (made with ChatGPT)
+![MsTargetPeaker](./images/MsTargetPeaker_en_v4.png "MsTargetPeaker Graph Intro")
 
 
 ## Installation
